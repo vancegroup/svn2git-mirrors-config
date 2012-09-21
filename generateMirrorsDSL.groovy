@@ -91,7 +91,7 @@ def repos = [
 
 repos.each{
     def jobname = 'generated-svn2git-' + it.projname
-    def cmd =  'export GITREMOTE=' + it.git // + '\n' + '$WORKSPACE/driver.sh ' + it.svn
+    def cmd =  'export GITREMOTE=' + /* it.git +*/ '\n' + '$WORKSPACE/driver.sh ' + it.svn
     def cronLine = it.frequency
     println 'Job name: ' + jobname
     println 'Job cron line: ' + cronLine
