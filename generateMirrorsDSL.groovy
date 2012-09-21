@@ -4,12 +4,11 @@ daily = 'H H(0-7) * * *'
 defaults = [
     frequency: daily
 ]
-def fillDefaults = {
-    def themap = it
+def fillDefaults(themap) {
     defaults.eachWithIndex{ defaultIt, i->
         if (!themap.containsKey(defaultIt.key)) { themap[defaultIt.key] = defaultIt.value }
     }
-    themap
+    return themap
 }
 
 // utility function for github-based mirrors
