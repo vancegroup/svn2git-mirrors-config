@@ -2,7 +2,8 @@ hourly = 'H * * * * '
 daily = 'H H(0-7) * * *'
 
 defaults = [
-    frequency: daily
+    frequency: daily,
+    noMinimizeUrl: false
 ]
 def fillDefaults(themap) {
     defaults.eachWithIndex{ defaultIt, i->
@@ -53,6 +54,11 @@ def repos = [
         svn: sfsvnroot('ggt'),
         reponame: 'gmtl-mirror'
     ]),
+    fillDefaults([
+        projname: 'gmtl-testfresh',
+        svn: sfsvnroot('ggt'),
+        git: ''
+    ]),
     vgmirrors([
         projname: 'h3dutil',
         svn: 'https://www.h3d.org:8090/H3DUtil/'
@@ -93,6 +99,9 @@ repos.each{
     def jobname = 'generated-svn2git-' + it.projname
     def cmd =  'export GITREMOTE=' + it.git + '\n' + '$WORKSPACE/driver.sh ' + it.svn
     def cronLine = it.frequency
+    if (noMinimizeUrl) {
+        cmd = 'export NOMINIMIZEURL=true \n' + cmd
+    }
     println 'Job name: ' + jobname
     println 'Job cron line: ' + cronLine
     println 'Shell commands:\n' + cmd
