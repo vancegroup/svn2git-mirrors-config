@@ -99,7 +99,7 @@ repos.each{
     def jobname = 'generated-svn2git-' + it.projname
     def cmd =  'export GITREMOTE=' + it.git + '\n' + '$WORKSPACE/driver.sh ' + it.svn
     def cronLine = it.frequency
-    if (noMinimizeUrl) {
+    if (it.noMinimizeUrl) {
         cmd = 'export NOMINIMIZEURL=true \n' + cmd
     }
     println 'Job name: ' + jobname
