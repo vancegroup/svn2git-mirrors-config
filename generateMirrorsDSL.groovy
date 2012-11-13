@@ -87,6 +87,11 @@ def repos = [
         svn: gcsvnroot('osgworks'),
         reponame: 'osgWorks-mirror'
     ]),
+    vgmirrors([
+        projname: 'mrbs',
+        svn: 'https://mrbs.svn.sourceforge.net/svnroot/mrbs/mrbs/',
+        reponame: 'mrbs'
+    ]),
     /*
     vgmirrors([
         projname: 'hapi',
