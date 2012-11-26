@@ -92,6 +92,11 @@ def repos = [
         svn: 'https://mrbs.svn.sourceforge.net/svnroot/mrbs/mrbs/',
         reponame: 'mrbs'
     ]),
+    vgmirrors([
+        projname: 'avr-libc',
+        svn: 'http://svn.savannah.nongnu.org/svn/avr-libc/',
+        reponame: 'avr-libc'
+    ]),
     /*
     vgmirrors([
         projname: 'hapi',
