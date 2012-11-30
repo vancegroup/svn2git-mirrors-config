@@ -97,6 +97,11 @@ def repos = [
         svn: 'http://svn.savannah.nongnu.org/svn/avr-libc/',
         reponame: 'avr-libc'
     ]),
+    vgmirrors([
+        projname: 'audiere',
+        svn: sfsvnroot('audiere'),
+        reponame: 'audiere'
+    ]),
     /*
     vgmirrors([
         projname: 'hapi',
