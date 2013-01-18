@@ -102,6 +102,11 @@ def repos = [
         svn: sfsvnroot('audiere'),
         reponame: 'audiere'
     ]),
+    vgmirrors([
+        projname: 'include-what-you-use',
+        svn: gcsvnroot('include-what-you-use'),
+        reponame: 'include-what-you-use'
+    ]),
     /*
     vgmirrors([
         projname: 'hapi',
