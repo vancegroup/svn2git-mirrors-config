@@ -107,6 +107,11 @@ def repos = [
         svn: gcsvnroot('include-what-you-use'),
         reponame: 'include-what-you-use'
     ]),
+    vgmirrors([
+        projname: 'visual-understanding-environment',
+        svn: sfsvnroot('tuftsvue'),
+        reponame: 'visual-understanding-environment'
+    ])
     /*
     vgmirrors([
         projname: 'hapi',
