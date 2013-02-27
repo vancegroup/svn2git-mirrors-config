@@ -89,29 +89,28 @@ def repos = [
     ]),
     vgmirrors([
         projname: 'mrbs',
-        svn: 'https://mrbs.svn.sourceforge.net/svnroot/mrbs/mrbs/',
-        reponame: 'mrbs'
+        svn: 'https://mrbs.svn.sourceforge.net/svnroot/mrbs/mrbs/'
     ]),
     vgmirrors([
         projname: 'avr-libc',
-        svn: 'http://svn.savannah.nongnu.org/svn/avr-libc/',
-        reponame: 'avr-libc'
+        svn: 'http://svn.savannah.nongnu.org/svn/avr-libc/'
     ]),
     vgmirrors([
         projname: 'audiere',
-        svn: sfsvnroot('audiere'),
-        reponame: 'audiere'
+        svn: sfsvnroot('audiere')
     ]),
     vgmirrors([
         projname: 'include-what-you-use',
-        svn: gcsvnroot('include-what-you-use'),
-        reponame: 'include-what-you-use'
+        svn: gcsvnroot('include-what-you-use')
     ]),
     vgmirrors([
         projname: 'visual-understanding-environment',
-        svn: sfsvnroot('tuftsvue'),
-        reponame: 'visual-understanding-environment'
-    ])
+        svn: sfsvnroot('tuftsvue')
+    ]),
+    vgmirrors([
+        projname: 'collada-dom',
+        svn: sfsvnroot('collada-dom'),
+    ]),
     /*
     vgmirrors([
         projname: 'hapi',
