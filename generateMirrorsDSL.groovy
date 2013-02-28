@@ -89,7 +89,7 @@ def repos = [
     ]),
     vgmirrors([
         projname: 'mrbs',
-        svn: 'https://mrbs.svn.sourceforge.net/svnroot/mrbs/mrbs/'
+        svn: 'http://svn.code.sf.net/p/mrbs/code/mrbs/'
     ]),
     vgmirrors([
         projname: 'avr-libc',
