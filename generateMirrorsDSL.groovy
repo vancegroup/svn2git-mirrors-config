@@ -115,6 +115,10 @@ def repos = [
         projname: 'collada-dom',
         svn: sfsvnroot('collada-dom'),
     ]),
+    vgmirrors([
+        projname: 'sofa-framework',
+        svn: 'svn://scm.gforge.inria.fr/svnroot/sofa/',
+    ]),
     /*
     vgmirrors([
         projname: 'hapi',
