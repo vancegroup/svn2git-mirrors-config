@@ -119,6 +119,10 @@ def repos = [
         projname: 'sofa-framework',
         svn: 'svn://scm.gforge.inria.fr/svnroot/sofa/',
     ]),
+    vgmirrors([
+        projname: 'bullet-physics',
+        svn: gcsvnroot('bullet'),
+    ]),
     /*
     vgmirrors([
         projname: 'hapi',
