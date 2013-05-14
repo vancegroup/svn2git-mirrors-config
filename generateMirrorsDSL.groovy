@@ -123,10 +123,6 @@ def repos = [
         projname: 'bullet-physics',
         svn: gcsvnroot('bullet'),
     ]),
-	vgmirrors([
-        projname: 'osgworks',
-        svn: gcsvnroot('osgworks'),
-    ]),
     /*
     vgmirrors([
         projname: 'hapi',
