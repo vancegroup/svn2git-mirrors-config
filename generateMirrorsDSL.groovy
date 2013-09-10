@@ -123,6 +123,10 @@ def repos = [
         projname: 'bullet-physics',
         svn: gcsvnroot('bullet'),
     ]),
+    vgmirrors([
+        projname: 'jsoncpp',
+        svn: 'svn://svn.code.sf.net/p/jsoncpp/code/',
+    ])
     /*
     vgmirrors([
         projname: 'hapi',
