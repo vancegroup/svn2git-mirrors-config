@@ -108,10 +108,6 @@ def repos = [
         svn: gcsvnroot('include-what-you-use')
     ]),
     vgmirrors([
-        projname: 'visual-understanding-environment',
-        svn: sfsvnroot('tuftsvue')
-    ]),
-    vgmirrors([
         projname: 'collada-dom',
         svn: sfsvnroot('collada-dom'),
     ]),
