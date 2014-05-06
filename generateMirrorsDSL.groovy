@@ -122,12 +122,11 @@ def repos = [
     vgmirrors([
         projname: 'jsoncpp',
         svn: 'svn://svn.code.sf.net/p/jsoncpp/code/',
-    ])
-    /*
+    ]),
     vgmirrors([
         projname: 'hapi',
         svn: 'https://www.h3d.org:8090/HAPI/'
-    ]),*/
+    ]),
     
 ]
 
